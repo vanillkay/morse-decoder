@@ -1,0 +1,139 @@
+.code-translate {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #E9C46A;
+  min-height: 50vh;
+  @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+  font-family: 'Inconsolata', monospace;
+  font-size: 2vw;
+  letter-spacing: 1vw;
+  text-transform: uppercase;
+  max-width: 860px;
+  padding: 10px;
+  box-sizing: border-box;
+
+  &__menu{
+    background-color: #2A9D8F;
+    color: white;
+
+    &-selected{
+      background-color: #8AB17D;
+    }
+  }
+
+
+
+  &__ready{
+    justify-content: space-around;
+  }
+
+  &__container{
+    width: 90%;
+  }
+
+  &__symbols {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  &__translate{
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 10px;
+    border: 5px solid #F4A261;
+    background-color: #EFB366;
+    width: 100%;
+    color: #2A9D8F;
+    height: auto;
+
+
+  }
+  &__input {
+
+    &-words{
+      display: inline-flex;
+      border: 3px solid red;
+      padding: 10px;
+      align-items: center;
+      justify-content: center;
+      background-color: #E76F51;
+      box-sizing: border-box;
+      color: black;
+      font-size: 10pt;
+      font-weight: bold;
+      transition: .3s;
+      margin: 10px 0 ;
+
+      &:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+      }
+    }
+
+    &-symbols {
+      display: inline-flex;
+      border: 3px solid red;
+      padding: 10px;
+      align-items: center;
+      justify-content: center;
+      background-color: #E76F51;
+      box-sizing: border-box;
+      margin: 10px 0;
+      color: black;
+      font-size: 20pt;
+      font-weight: bold;
+      transition: .3s;
+
+      &:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+      }
+
+    }
+  }
+
+
+  &__slash{
+    font-weight: bold;
+    font-size: 20pt;
+    margin-right: 5px;
+  }
+  &__spaces {
+    margin: 10px 0;
+  }
+
+  &__entered-code {
+    border: 2px solid #F4A261;
+    min-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 15px;
+    margin: 20px 0;
+    min-height: 120px;
+    box-sizing: border-box;
+    align-items: center;
+
+    & span {
+      align-self: center;
+    }
+
+    &:hover {
+      cursor: text;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+  }
+
+  &__wrong-symbol {
+    font-weight: bold;
+
+
+  }
+}

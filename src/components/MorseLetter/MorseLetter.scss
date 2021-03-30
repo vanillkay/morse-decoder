@@ -1,0 +1,8 @@
+.morseLetter{
+  display: flex;
+  align-items: center;
+}
+
+.morseLetter:last-child{
+  margin-right: -3vw;
+}

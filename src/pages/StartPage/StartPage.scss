@@ -1,0 +1,13 @@
+.startPage {
+  height: 50vh;
+  min-height: 400px;
+  &__words {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+
+  }
+}
+
+
